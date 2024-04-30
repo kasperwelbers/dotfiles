@@ -1,0 +1,24 @@
+{
+  "recommendations": [
+    "better-ts-errors.better-ts-errors",
+    "bradlc.vscode-tailwindcss",
+    "clinyong.vscode-css-modules",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "formulahendry.code-runner",
+    "github.copilot",
+    "github.copilot-chat",
+    "github.vscode-github-actions",
+    "ms-azuretools.vscode-docker",
+    "ms-python.black-formatter",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-vscode.vscode-typescript-next",
+    "ofhumanbondage.react-proptypes-intellisense",
+    "vscodevim.vim",
+    "yzhang.markdown-all-in-one",
+    "matangover.mypy",
+    "ms-python.python",
+    "ms-python.black-formatter"
+  ]
+}
