@@ -2,10 +2,13 @@
 
 Clone into home directory and create symlinks with stow
 
+
 ```console
 cd ~/
 git clone git@github.com:kasperwelbers/dotfiles
 cd dotfiles
+
+sudo apt install stow build-essential
 stow .
 ```
 

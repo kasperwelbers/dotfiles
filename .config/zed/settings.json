@@ -40,5 +40,29 @@
   },
   "code_actions_on_format": {
     "source.removeUnusedImports": true
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "strict"
+        },
+        "python": {
+          "pythonPath": "env/bin/python"
+        }
+      }
+    },
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "tsserver": {
+            "experimental": {
+              "enableProjectDiagnostics": true
+            }
+          }
+        }
+      }
+    }
   }
 }
