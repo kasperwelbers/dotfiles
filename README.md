@@ -18,11 +18,11 @@ Install neovim, bat, fdfind, git, snap, zellij, gh, zed and starship
 
 ```console
 sudo apt update
-sudo apt install neovim bat fdfind git snapd
+sudo apt install neovim bat fd-find git snapd
 sudo snap install zellij --classic
 sudo snap install gh
 curl -f https://zed.dev/install.sh | sh
-curl -sS https://starship.rs/install.sh | sh zed
+curl -sS https://starship.rs/install.sh | sh
 ```
 
 Install brew, and use brew to install fzf
