@@ -14,9 +14,9 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": false
+    "enabled_in_assistant": false
   },
-  "agent": {
+  "assistant": {
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",

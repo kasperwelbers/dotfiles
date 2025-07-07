@@ -7,6 +7,31 @@
 // from the command palette.
 [
   {
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-alt-h": "vim::ResizePaneLeft",
+      "ctrl-alt-j": "vim::ResizePaneDown",
+      "ctrl-alt-k": "vim::ResizePaneUp",
+      "ctrl-alt-l": "vim::ResizePaneRight",
+      "ctrl-b": "workspace::ToggleLeftDock",
+      "ctrl-c": "editor::Copy",
+      "ctrl-a": "editor::SelectAll",
+
+      "ctrl-shift-backspace": "repl::ClearOutputs",
+
+      // default vim, but so that it also works in terminal
+      "ctrl-w s": "pane::SplitHorizontal",
+      "ctrl-w v": "pane::SplitVertical",
+      "ctrl-w c": "pane::CloseActiveItem",
+
+      // for quick closing of panes, (and overriding that somehow default for terminal is to close zed entirely)
+      "ctrl-q": "pane::CloseActiveItem"
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
@@ -19,20 +44,16 @@
     }
   },
   {
+    "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
-      "ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-l": "workspace::ActivatePaneRight",
-      "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown",
-      "ctrl-w": "pane::CloseActiveItem",
-      "ctrl-shift-h": "vim::ResizePaneLeft",
-      "ctrl-shift-j": "vim::ResizePaneDown",
-      "ctrl-shift-k": "vim::ResizePaneUp",
-      "ctrl-shift-l": "vim::ResizePaneRight",
-      "ctrl-alt-h": "workspace::SwapPaneLeft",
-      "ctrl-alt-j": "workspace::SwapPaneDown",
-      "ctrl-alt-k": "workspace::SwapPaneUp",
-      "ctrl-alt-l": "workspace::SwapPaneRight"
+      "s": "vim::PushSneak",
+      "shift-s": "vim::PushSneakBackward"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "ctrl-shift-m": "agent::OpenActiveThreadAsMarkdown"
     }
   }
 ]
