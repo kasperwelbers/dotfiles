@@ -2,7 +2,6 @@
 
 Clone into home directory and create symlinks with stow
 
-
 ```console
 cd ~/
 git clone git@github.com:kasperwelbers/dotfiles
@@ -10,6 +9,14 @@ cd dotfiles
 
 sudo apt install stow build-essential
 stow .
+```
+
+# Install i3 or sway
+
+Also install picom (window visuals) and feh (background image)
+
+```console
+sudo apt install i3 picom feh
 ```
 
 # Install packages
@@ -34,12 +41,3 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 
 brew install fzf
 ```
-
-
-
-
-
-
-
-
-

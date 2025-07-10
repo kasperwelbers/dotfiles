@@ -2,6 +2,5 @@ font-size = 14
 
 alpha-blending = linear-corrected
 
-background-opacity = 0.96
+background-opacity = 0.99
 window-padding-x = 6
-
