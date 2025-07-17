@@ -43,3 +43,30 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 
 brew install fzf
 ```
+
+## I3 stuff I need to remember and other nice stuff
+
+### Connect to wifi
+
+```
+nmcli dev wifi
+nmcli device wifi connect [sid] password [password]
+```
+
+### Set second screen
+
+If not auto detected, use xrandr, and afterwards restart i3 settings (meta+shift+r)
+
+```
+xrandr
+xrandr --output DP-4 --right-of eDP-1
+```
+
+### Set default programs
+
+Let's you select program, and sets as default
+
+```
+mimeopen -d file.ext
+```
+

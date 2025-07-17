@@ -4,3 +4,9 @@ alpha-blending = linear-corrected
 
 background-opacity = 0.6
 window-padding-x = 6
+
+keybind = ctrl+shift+j=scroll_page_lines:1
+keybind = ctrl+shift+k=scroll_page_lines:-1
+keybind = ctrl+shift+h=scroll_page_lines:-10
+keybind = ctrl+shift+l=scroll_page_lines:10
+
