@@ -21,11 +21,11 @@ sudo apt install i3 picom feh
 
 # Install packages
 
-Install neovim, bat, fdfind, git, snap, zellij, gh, zed, ghostty, and starship
+Install neovim, bat, fdfind, git, snap, zellij, gh, zed, ghostty, btop, and starship
 
 ```console
 sudo apt update
-sudo apt install neovim bat fd-find git snapd
+sudo apt install neovim bat fd-find git snapd btop
 sudo snap install zellij --classic
 sudo snap install ghostty --classic
 sudo snap install gh
@@ -33,7 +33,7 @@ curl -f https://zed.dev/install.sh | sh
 curl -sS https://starship.rs/install.sh | sh
 ```
 
-Install brew, and use brew to install fzf
+Install brew, and use brew to install fzf and nushell
 
 ```console
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -42,6 +42,7 @@ test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/bre
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 
 brew install fzf
+brew install nushell
 ```
 
 ## I3 stuff I need to remember and other nice stuff

@@ -10,3 +10,5 @@ keybind = ctrl+shift+k=scroll_page_lines:-1
 keybind = ctrl+shift+h=scroll_page_lines:-10
 keybind = ctrl+shift+l=scroll_page_lines:10
 
+keybind = ctrl+shift+o=write_screen_file:open
+
