@@ -11,7 +11,7 @@ sudo apt install stow build-essential
 stow .
 ```
 
-# Install i3 or sway
+# Install i3
 
 Also install picom (window visuals) and feh (background image)
 
@@ -21,28 +21,22 @@ sudo apt install i3 picom feh
 
 # Install packages
 
-Install neovim, bat, fdfind, git, snap, zellij, gh, zed, ghostty, btop, and starship
-
 ```console
 sudo apt update
-sudo apt install neovim bat fd-find git snapd btop
+sudo apt install git btop roli snapd
 sudo snap install zellij --classic
 sudo snap install ghostty --classic
 sudo snap install gh
+sudo snap install nushell
 curl -f https://zed.dev/install.sh | sh
-curl -sS https://starship.rs/install.sh | sh
 ```
 
-Install brew, and use brew to install fzf and nushell
+# Install neovim
 
 ```console
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
-
-brew install fzf
-brew install nushell
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc ripgrep unzip git xclip neovim
 ```
 
 ## I3 stuff I need to remember and other nice stuff

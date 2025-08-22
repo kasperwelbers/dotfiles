@@ -123,19 +123,14 @@ export VISUAL='nvim'
 # gh copilot in cli
 alias 'exp'='gh copilot explain'
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-eval "$(fzf --bash)"
-
-# customize fzf (requires having installed bat and fd-find
-# https://www.redhat.com/sysadmin/fzf-linux-fuzzy-finder (but fdfind and batcat in bash)
-export FZF_CTRL_T_OPTS="--preview 'batcat --color=always --line-range=:500 {}'"
-export FZF_DEFAULT_COMMAND="fdfind --type f"
-export FZF_ALT_C_COMMAND='fdfind --type d'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-eval "$(starship init bash)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# DEPRECATED, but might bring back if stop using nushell
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(fzf --bash)"
+# export FZF_CTRL_T_OPTS="--preview 'batcat --color=always --line-range=:500 {}'"
+# export FZF_DEFAULT_COMMAND="fdfind --type f"
+# export FZF_ALT_C_COMMAND='fdfind --type d'
+# eval "$(starship init bash)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
