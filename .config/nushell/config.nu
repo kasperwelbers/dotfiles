@@ -2,12 +2,10 @@
 
 $env.config.show_banner = false
 
-# Set standard editor variables
-$env.EDITOR = "nvim"
-$env.VISUAL = "nvim"
+$env.EDITOR = 'nvim'
+$env.VISUAL = 'nvim'
 $env.config.buffer_editor = "nvim"
-$env.config.edit_mode = "vi"
-
+$env.config.edit_mode = 'vi'
 
 # FZF configuration variables
 $env.FZF_CTRL_T_OPTS = "--preview 'bat --color=always --line-range=:500 {}'"

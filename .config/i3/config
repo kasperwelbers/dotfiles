@@ -45,6 +45,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Don't focus on mouse hover
+focus_follows_mouse no
+
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
 # tiling_drag modifier titlebar
@@ -179,8 +182,18 @@ bar {
         status_command i3status
 }
 
+### KEYBOARD SETTINGS 
+
+# set touch tap
+exec xinput set-prop 8 318 1
+
+# make caps lock additional escape
+exec --no-startup-id setxkbmap -option caps:escape
+
 # set keyboard repeat rate
 exec_always --no-startup-id xset r rate 200 40
+
+### LAYOUT SETTINGS
 
 # set resolution
 # exec_always xrandr --output HDMI-0 --mode 3840x2160 --rate 59.94
@@ -204,5 +217,4 @@ exec_always --no-startup-id picom
 client.focused          #FFFF2200 #FFFF0088  #000000
 client.focused_inactive #FFFF0000 #FFFFFF00  #000000
 client.unfocused        #FFFFFF00 #FFFFFF00  #000000
-
 

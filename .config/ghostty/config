@@ -2,7 +2,7 @@ font-size = 14
 
 alpha-blending = linear-corrected
 
-background-opacity = 0.6
+background-opacity = 0.8
 window-padding-x = 6
 
 keybind = ctrl+shift+j=scroll_page_lines:1
