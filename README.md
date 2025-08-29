@@ -23,7 +23,7 @@ sudo apt install i3 picom feh
 
 ```console
 sudo apt update
-sudo apt install git btop roli snapd
+sudo apt install git btop roli snapd xclip
 sudo snap install zellij --classic
 sudo snap install ghostty --classic
 sudo snap install gh
