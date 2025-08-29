@@ -21,15 +21,39 @@ sudo apt install i3 picom feh
 
 # Install packages
 
+### apt
+
 ```console
 sudo apt update
-sudo apt install git btop roli snapd xclip
+sudo apt install git btop roli xclip
+curl -f https://zed.dev/install.sh | sh
+```
+
+### snap
+
+```console
+sudo apt install snapd
 sudo snap install zellij --classic
 sudo snap install ghostty --classic
 sudo snap install gh
 sudo snap install nushell
-curl -f https://zed.dev/install.sh | sh
 ```
+
+### uv (python)
+
+```console
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv tool install --python 3.12 posting
+```
+
+### cargo (rust)
+
+```console
+curl https://sh.rustup.rs -sSf | sh
+# Gurk is a signal client, but doesn't yet appear very usefull
+# cargo install --git https://github.com/boxdot/gurk-rs gurk
+```
+
 
 # Install neovim
 

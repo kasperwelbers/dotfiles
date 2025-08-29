@@ -22,3 +22,5 @@ def nu-copy [] {
     print $"Copied \"($fname)\""
     $fname | xclip -selection clipboard
 }
+
+source $"($nu.home-path)/.cargo/env.nu"
