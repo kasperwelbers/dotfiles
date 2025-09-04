@@ -55,9 +55,8 @@ focus_follows_mouse no
 # start a terminal
 bindsym $mod+Return exec ghostty
 
-# run
+# run with rofi (if exists) or dmenu
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme ~/.config/rofi/config.rasi
-# IF NOT USING ROFI
 # bindsym $mod+d exec --no-startup-id dmenu_run
 
 # switch windows

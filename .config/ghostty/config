@@ -2,7 +2,7 @@ font-size = 14
 
 alpha-blending = linear-corrected
 
-background-opacity = 0.8
+background-opacity = 0.80
 window-padding-x = 6
 
 keybind = ctrl+shift+j=scroll_page_lines:1
@@ -12,4 +12,8 @@ keybind = ctrl+shift+l=scroll_page_lines:10
 
 keybind = ctrl+shift+o=write_screen_file:open
 
+keybind = global:super+t=toggle_quick_terminal
+
 command = nu
+
+

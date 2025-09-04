@@ -25,7 +25,7 @@ sudo apt install i3 picom feh
 
 ```console
 sudo apt update
-sudo apt install git btop roli xclip
+sudo apt install git btop roli xclip pavucontrol
 curl -f https://zed.dev/install.sh | sh
 ```
 
@@ -72,6 +72,12 @@ nmcli dev wifi
 nmcli device wifi connect [sid] password [password]
 ```
 
+### AUDIO
+
+```
+pavucontrol
+```
+
 ### Set second screen
 
 If not auto detected, use xrandr, and afterwards restart i3 settings (meta+shift+r)
@@ -88,4 +94,5 @@ Let's you select program, and sets as default
 ```
 mimeopen -d file.ext
 ```
+
 
