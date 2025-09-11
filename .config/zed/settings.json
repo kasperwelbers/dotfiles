@@ -21,8 +21,7 @@
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4o"
-    },
-    "version": "2"
+    }
   },
   "features": {
     "edit_prediction_provider": "copilot"
@@ -34,14 +33,12 @@
   "buffer_font_size": 16,
   "vim": {
     "use_system_clipboard": "always",
-    "use_multiline_find": true,
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true
   },
 
   "inlay_hints": {
-    "enabled": false,
-    "only_current_line": true
+    "enabled": false
   },
   "preview_tabs": {
     "enabled": true,
@@ -51,8 +48,9 @@
     "source.removeUnusedImports": true
   },
   "active_pane_modifiers": {
-    "inactive_opacity": 0.7
+    "inactive_opacity": 0.5
   },
+
   "lsp": {
     "pyright": {
       "settings": {

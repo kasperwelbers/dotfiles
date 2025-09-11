@@ -26,6 +26,10 @@
       "ctrl-w s": "pane::SplitHorizontal",
       "ctrl-w v": "pane::SplitVertical",
       "ctrl-w c": "pane::CloseActiveItem",
+      // add window commands for hiding docks
+      "ctrl-w h": "workspace::ToggleLeftDock",
+      "ctrl-w l": "workspace::ToggleRightDock",
+      "ctrl-w j": "workspace::ToggleBottomDock",
 
       // for quick closing of panes, (and overriding that somehow default for terminal is to close zed entirely)
       "ctrl-q": "pane::CloseActiveItem"
@@ -48,6 +52,18 @@
     "bindings": {
       "s": "vim::PushSneak",
       "shift-s": "vim::PushSneakBackward"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting",
+    "bindings": {
+      // Use space as leader key
+      // SEARCH:
+      "space s f": "file_finder::Toggle",
+      "space s p": "project_panel::ToggleFocus",
+      "space space": "project_symbols::Toggle",
+      // DIAGNOSTICS
+      "space q": "diagnostics::Deploy"
     }
   },
   {

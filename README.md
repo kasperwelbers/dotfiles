@@ -37,6 +37,7 @@ sudo snap install zellij --classic
 sudo snap install ghostty --classic
 sudo snap install gh
 sudo snap install nushell
+sudo snap install spt
 ```
 
 ### uv (python)
