@@ -17,3 +17,4 @@ keybind = global:super+t=toggle_quick_terminal
 command = nu
 
 
+

@@ -52,14 +52,20 @@
   },
 
   "lsp": {
-    "pyright": {
+    "pylsp": {
       "settings": {
-        "python.analysis": {
-          "diagnosticMode": "workspace",
-          "typeCheckingMode": "strict"
-        },
         "python": {
           "pythonPath": "env/bin/python"
+        },
+        "plugins": {
+          "pyflakes": {
+            "enabled": true
+          },
+          "pycodestyle": {
+            "enabled": true,
+            "ignore": ["W191"],
+            "maxLineLength": 127
+          }
         }
       }
     },
