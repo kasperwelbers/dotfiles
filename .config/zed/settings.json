@@ -80,5 +80,13 @@
         }
       }
     }
+  },
+  "languages": {
+    "HTML": {
+      "linked_edits": false
+    },
+    "TSX": {
+      "linked_edits": false
+    }
   }
 }
