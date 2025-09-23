@@ -88,5 +88,8 @@
     "TSX": {
       "linked_edits": false
     }
+  },
+  "file_types": {
+    "Typescript": ["tsx"]
   }
 }
