@@ -1,0 +1,32 @@
+live_config_reload = true
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+decorations = "full"
+startup_mode = "Windowed"
+dynamic_title = true
+blur = true
+opacity = 0.70
+
+padding.x = 10
+padding.y = 10
+
+[cursor]
+unfocused_hollow = false
+
+  [cursor.style]
+  shape = "Beam"
+  blinking = "On"
+
+# [colors]
+# background = "#181825"
+
+[font]
+size = 13
+
+[shell]
+program = "/snap/bin/nu"
+args = ["-l"]

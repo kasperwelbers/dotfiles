@@ -16,23 +16,32 @@
       "ctrl-alt-j": "vim::ResizePaneDown",
       "ctrl-alt-k": "vim::ResizePaneUp",
       "ctrl-alt-l": "vim::ResizePaneRight",
+      "ctrl-shift-h": "workspace::SwapPaneLeft",
+      "ctrl-shift-j": "workspace::SwapPaneDown",
+      "ctrl-shift-k": "workspace::SwapPaneUp",
+      "ctrl-shift-l": "workspace::SwapPaneRight",
       "ctrl-b": "workspace::ToggleLeftDock",
       "ctrl-c": "editor::Copy",
       "ctrl-a": "editor::SelectAll",
 
       "ctrl-shift-backspace": "repl::ClearOutputs",
 
-      // default vim, but so that it also works in terminal
-      "ctrl-w s": "pane::SplitHorizontal",
-      "ctrl-w v": "pane::SplitVertical",
-      "ctrl-w c": "pane::CloseActiveItem",
-      // add window commands for hiding docks
+      "ctrl-w": null,
+      "ctrl-q": "zed::About", // somehow must be a zed:: action, but I just don't want this to kill zed
+
+      // // add window commands for hiding docks
       "ctrl-w h": "workspace::ToggleLeftDock",
       "ctrl-w l": "workspace::ToggleRightDock",
-      "ctrl-w j": "workspace::ToggleBottomDock",
-
-      // for quick closing of panes, (and overriding that somehow default for terminal is to close zed entirely)
-      "ctrl-q": "pane::CloseActiveItem"
+      "ctrl-w j": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      // default for vim in editor, but so that it also works in terminal
+      "ctrl-w s": "pane::SplitHorizontal",
+      "ctrl-w v": "pane::SplitVertical",
+      "ctrl-w c": "pane::CloseActiveItem"
     }
   },
   {
@@ -64,6 +73,12 @@
       "space space": "project_symbols::Toggle",
       // DIAGNOSTICS
       "space q": "diagnostics::Deploy"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "s": ["vim::PushAddSurrounds", {}]
     }
   },
   {
