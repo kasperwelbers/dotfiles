@@ -27,7 +27,7 @@
       "ctrl-shift-backspace": "repl::ClearOutputs",
 
       "ctrl-w": null,
-      "ctrl-q": "zed::About", // somehow must be a zed:: action, but I just don't want this to kill zed
+      "ctrl-q": "pane::CloseActiveItem", 
 
       // // add window commands for hiding docks
       "ctrl-w h": "workspace::ToggleLeftDock",

@@ -55,25 +55,38 @@
     "shell": { "program": "nu" }
   },
 
+  // LANGUAGES AND LSP
+
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff", "basedpyright", "!pyright", "!pylsp"],
+      "formatter": "language_server",
+      "format_on_save": "on"
+    },
+    "HTML": {
+      "linked_edits": false
+    },
+    "TSX": {
+      "linked_edits": false
+    }
+  },
+  "file_types": {
+    "Typescript": ["tsx"]
+  },
+
   "lsp": {
-    "pylsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 127
+        }
+      }
+    },
+    "basedpyright": {
       "settings": {
-        "python": {
-          "pythonPath": "env/bin/python"
-        },
-        "plugins": {
-          "pyflakes": {
-            "enabled": true
-          },
-          "pycodestyle": {
-            "enabled": true,
-            "ignore": ["W191"],
-            "maxLineLength": 127
-          },
-          "pylsp_mypy": {
-            "enabled": true,
-            "args": ["--ignore-errors", "--ignore-missing-imports"]
-          }
+        "basedpyright.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "standard"
         }
       }
     },
@@ -88,22 +101,5 @@
         }
       }
     }
-  },
-
-  "languages": {
-    "Python": {
-      "language_servers": ["pylsp", "pyright"],
-      "formatter": "language_server",
-      "format_on_save": "on"
-    },
-    "HTML": {
-      "linked_edits": false
-    },
-    "TSX": {
-      "linked_edits": false
-    }
-  },
-  "file_types": {
-    "Typescript": ["tsx"]
   }
 }
