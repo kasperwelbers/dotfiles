@@ -27,7 +27,7 @@
       "ctrl-shift-backspace": "repl::ClearOutputs",
 
       "ctrl-w": null,
-      "ctrl-q": "pane::CloseActiveItem", 
+      "ctrl-q": "pane::CloseActiveItem",
 
       // // add window commands for hiding docks
       "ctrl-w h": "workspace::ToggleLeftDock",
@@ -53,6 +53,7 @@
   {
     "context": "Editor",
     "bindings": {
+      "ctrl-m": "diagnostics::DeployCurrentFile"
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
   },
